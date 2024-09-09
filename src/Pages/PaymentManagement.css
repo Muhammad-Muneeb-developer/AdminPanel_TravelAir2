@@ -1,0 +1,235 @@
+/* Overall container */
+.main-class {
+    width: 100%;
+    height: auto;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center div for layout */
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styling for the agent management section */
+.agent-classs {
+    margin-top: 50px;
+    padding: 40px;
+    width: 90%;
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+    align-items: center;
+    border: 2px solid #E5E7EB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.agent-classs img {
+    width: 40px;
+    height: 30px;
+}
+
+.agent-classs h1 {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.addagent {
+    margin-left: auto;
+}
+
+.addagent button {
+    color: white;
+    font-size: inherit;
+    background-color: #10B981;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.addagent button:hover {
+    background-color: #059669;
+}
+
+/* Styling the form card */
+.agent-form-card {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 40%;
+    background-color: #f4f4f4;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.agent-form-card h1 {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* Input styling for the form card */
+.agent-form-card select,
+.agent-form-card input {
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.agent-form-card select:focus,
+.agent-form-card input:focus {
+    border-color: #10B981;
+}
+
+.agent-form-card button {
+    width: 15%;
+    margin-left: auto;
+    background-color: #10B981;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.agent-form-card button:hover {
+    background-color: #059669;
+}
+
+/* Table styling */
+.table-agent-class {
+    padding: 30px;
+    width: 90%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 50px;
+    border: 2px solid #E5E7EB;
+    box-shadow: 0 4px 8px rgba(8, 6, 6, 0.1);
+    position: relative;
+}
+
+/* Search input in the table section */
+.table-agent-class input {
+    padding: 15px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 5px solid #ABABAB;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.table td button {
+    background-color: #10B981;
+    color: white;
+    font-size: inherit;
+    border: none;
+    padding: 10px 2px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.table td button:hover {
+    background-color: #059669;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody {
+    display: block;
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+tbody tr {
+    height: 30px;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .agent-classs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .agent-form-card {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .table-agent-class {
+        width: 100%;
+    }
+
+    .agent-form-card button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .agent-classs h1 {
+        font-size: medium;
+    }
+
+    .addagent button {
+        padding: 8px 16px;
+    }
+
+    .agent-form-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .agent-form-card button {
+        width: 70%;
+    }
+
+    .table-agent-class input {
+        padding: 10px;
+    }
+
+    .table td button {
+        padding: 8px;
+    }
+}
